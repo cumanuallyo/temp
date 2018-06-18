@@ -13,7 +13,7 @@ while True:
     num = random.randint(1, 100)
     if num == stop_at:
         break
-    sys.stdout.write(num)
+    sys.stdout.write(str(num))
 
 while True:
     animation = "|/-\\"
