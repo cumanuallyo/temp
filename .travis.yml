@@ -1,0 +1,13 @@
+sudo: required
+
+language: python
+python:
+  - "3.6"
+# command to install dependencies
+install:
+  #- pip install -r requirements.txt
+  - df -h
+  - free -g
+# command to run tests
+script: 
+  - python locustfile.py
