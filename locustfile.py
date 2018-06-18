@@ -7,7 +7,7 @@ for i in range(100):
     time.sleep(0.1)
     sys.stdout.write("\r" + animation[i % len(animation)])
     sys.stdout.flush()
-print "End!"
+print ("End!")
 
 stop_at = 0
 while True:
