@@ -8,6 +8,14 @@ install:
   #- pip install -r requirements.txt
   - df -h
   - free -g
+  - curl checkip.amazonaws.com
 # command to run tests
 script: 
+  - python locustfile.py
+  - python locustfile.py
+  - python locustfile.py
+  - python locustfile.py
+  - python locustfile.py
+  - python locustfile.py
+  - python locustfile.py
   - python locustfile.py
