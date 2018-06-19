@@ -33,8 +33,9 @@ before_deploy:
   - python locustfile.py
 
 deploy:
-  - python locustfile.py
-
+  provider: script
+  script: deploy.sh
+  
 after_deploy:
   - python locustfile.py
 
