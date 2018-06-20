@@ -10,6 +10,7 @@ before_script:
   - df -h
   - free -g
   - curl checkip.amazonaws.com
+  - python locustfile.py
 
 script:
   - python locustfile.py
