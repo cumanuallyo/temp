@@ -3,6 +3,8 @@ sudo: required
 language: python
 python:
   - "3.6"
+  - "3.4"
+  - "2.7"
 # command to install dependencies
 before_install:
   - df -h
@@ -12,35 +14,3 @@ before_install:
   #- sudo apt-get update
   #- sudo apt-get install nodejs -y
   #- sudo apt-get install npm -y
-install:
-  #- pip install -r requirements.txt
-  #- npm install -g cloudflare-cli
-  - python locustfile.py
-# command to run tests
-before_script:
-  - python locustfile.py
-
-script: 
-  - python locustfile.py
-  
-before_cache:
-  - python locustfile.py
-
-after_success:
-  - python locustfile.py
-
-before_deploy:
-  - python locustfile.py
-
-deploy:
-  provider: script
-  script: deploy.sh
-  
-after_deploy:
-  - python locustfile.py
-
-before_cache:
-  - python locustfile.py
-
-after_script:
-  - python locustfile.py

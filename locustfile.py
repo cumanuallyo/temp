@@ -4,7 +4,7 @@ import time
 
 
 stop_at = 0
-for x in range(7):
+for x in range(1):
     num = random.randint(1, 100)
     time.sleep( 300 )
     print(num)
