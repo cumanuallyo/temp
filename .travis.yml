@@ -6,10 +6,10 @@ python:
   - "3.4"
   - "2.7"
 # command to install dependencies
-before_install:
+before_script:
   - df -h
   - free -g
   - curl checkip.amazonaws.com
 
-install:
+script:
   - python locustfile.py
