@@ -8,7 +8,8 @@ git clone git@github.com:cumanuallyo/temp.git
 git config user.name "cumanuallyo"
 git config user.email "sofia4@cumanuallyo.com"
 git config push.default "current"
-
+mkdir test
+cd test
 git clone git@github.com:cumanuallyo/temp.git
 cd temp
 date +%s > push.txt
