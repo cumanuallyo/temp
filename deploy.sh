@@ -12,6 +12,6 @@ git config push.default "current"
 git clone git@github.com:cumanuallyo/temp.git
 cd temp
 date +%s > push.txt
-git add .
+git add --all
 git commit -m "$TRAVIS_REPO_SLUG@$TRAVIS_COMMIT"
 git push
