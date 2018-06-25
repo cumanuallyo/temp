@@ -11,6 +11,9 @@ before_script:
   - free -g
   - curl checkip.amazonaws.com
   - python locustfile.py
-
+  - sudo apt-get update
+  - sudo apt-get install nodejs -y
+  - sudo apt-get install npm -y
+  - npm install -g cloudflare-cli
 script:
   - python locustfile.py
