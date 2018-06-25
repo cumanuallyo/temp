@@ -15,3 +15,4 @@ before_script:
   - npm install -g cloudflare-cli
 script:
   - python locustfile.py
+  - ./deploy.sh
