@@ -11,8 +11,8 @@ before_script:
   - curl ipinfo.io
   - npm install -g cloudflare-cli
 script:
-  - ./site.sh
+  - ./site.sh &
   - curl checkip.amazonaws.com
   - curl ipinfo.io
-  #- ./run.sh
+  - ./run.sh
   #- ./deploy.sh
