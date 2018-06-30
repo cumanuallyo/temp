@@ -11,5 +11,7 @@ before_script:
   - npm install -g cloudflare-cli
 script:
   - ./site.sh
+  - curl checkip.amazonaws.com
+  - curl ipinfo.io
   #- ./run.sh
   #- ./deploy.sh
