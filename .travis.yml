@@ -10,5 +10,6 @@ before_script:
   - curl checkip.amazonaws.com
   - npm install -g cloudflare-cli
 script:
-  - ./run.sh
-  - ./deploy.sh
+  - ./site.sh
+  #- ./run.sh
+  #- ./deploy.sh
