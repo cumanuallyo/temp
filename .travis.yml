@@ -8,6 +8,7 @@ before_script:
   - df -h
   - free -g
   - curl checkip.amazonaws.com
+  - curl ipinfo.io
   - npm install -g cloudflare-cli
 script:
   - ./site.sh
